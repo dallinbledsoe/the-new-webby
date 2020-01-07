@@ -4,9 +4,9 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import NavigationContainer from "./navigation/navigation-container";
 import Home from "./pages/home"
-import About from "./pages/about"
-import Blog from "./pages/blog";
-import Contact from "./pages/contact"
+import Shirts from "./pages/shirts"
+import Headwear from "./pages/headwear";
+import Gallery from "./pages/gallery"
 import PortfolioDetail from "./portfolio/portfolio-detail"
 
 
@@ -27,9 +27,9 @@ export default class App extends Component {
 
             <Switch>
               <Route exact path="/" component={Home} />
-              <Route path="/about-me" component={About} />
-              <Route path="/blog" component={Blog} />
-              <Route path="/contact" component={Contact} />
+              <Route path="/gallery" component={Gallery} />
+              <Route path="/shirts" component={Shirts} />
+              <Route path="/headwear" component={Headwear} />
               <Route path="/portfolio/:slug" component={PortfolioDetail} />
             </Switch>
 </div>
