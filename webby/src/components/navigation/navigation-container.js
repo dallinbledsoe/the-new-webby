@@ -13,14 +13,14 @@ export default class NavigationComponent extends Component {
           Home
         </NavLink>
 
-        <NavLink to="/about-me" activeClassName="nav-link-active">
-          About
+        <NavLink to="/shirts" activeClassName="nav-link-active">
+          Shirts
         </NavLink>
-        <NavLink to="/contact" activeClassName="nav-link-active">
-          Contact
+        <NavLink to="/headwear" activeClassName="nav-link-active">
+          Headwear
         </NavLink>
-        <NavLink to="/blog" activeClassName="nav-link-active">
-          Blog
+        <NavLink to="/gallery" activeClassName="nav-link-active">
+          Gallery
         </NavLink>
 
         {false ? <button>Add Blog</button> : null}

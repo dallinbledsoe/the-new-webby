@@ -5,7 +5,7 @@ export default function() {
     return(
         <div>
             Headwear
-            <Link to="/about-me">Read more about myself</Link>
+            <Link to="/">Read more about myself</Link>
         </div>
     )
 }
