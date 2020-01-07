@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-
-import PortfolioItem from "./headwear-item"
 import HeadwearItem from "./headwear-item";
 
 export default class HeadwearContainer extends Component {
