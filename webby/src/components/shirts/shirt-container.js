@@ -10,15 +10,15 @@ export default class ShirtContainer extends Component {
             pageTitle: "Shirts",
             isLoading: false,
             data: [
-                {title: "Crewsades Logo Fleece Hoodie, category: "Hoodies", slug: ' ' }, 
+                {title: "Crewsades Logo Fleece Hoodie", category: "Hoodies", slug: ' ' },
                 {title: "Baby Blue Embroidered Tee", category: "Short-Sleeves", slug: ' ' },
                 {title: "Black Embroidered Tee", category: "Short-Sleeves", slug: ' ' },
                 {title: "No. 3 Black Tee", category: "Short-Sleeves", slug: ' ' },
                 {title: "No. 3 Red Tee", category: "Short-Sleeves", slug: ' ' },
                 {title: "No. 3 White Tee", category: "Short-Sleeves", slug: ' ' },
-                {title: "Enlighten Painting Long Sleeve Shirt", category: "Long-Sleeves", slug: ' ' }
+                {title: "Enlighten Painting Long Sleeve Shirt", category: "Long-Sleeves", slug: ' ' },
                 {title: "Enlighten B&W Painting Long Sleeve Shirt", category: "Long-Sleeves", slug: ' ' }
-        }
+            ]}
         this.handleFilter = this.handleFilter.bind(this);
     }
 
@@ -34,7 +34,7 @@ export default class ShirtContainer extends Component {
 
     portfolioItems() {
         return this.state.data.map(item => {
-            return <ShirtItem title={item.title} url={"google.com"} slug={item.slug} />
+            return <ShirtItem title={item.title} url={" "} slug={item.slug} />
         })
     }
 
@@ -54,9 +54,9 @@ export default class ShirtContainer extends Component {
         return (
             <div>
                 <h2>{this.state.pageTitle}</h2>
-                <button onClick={() => this.handleFilter('Scheduling')}>Scheduling</button>
-                <button onClick={() => this.handleFilter('Enterprise')}>Enterprise</button>
-                <button onClick={() => this.handleFilter('eCommerce')}>eCommerce</button>
+                <button onClick={() => this.handleFilter('Hoodies')}>Hoodies</button>
+                <button onClick={() => this.handleFilter('Short-Sleeves')}>Short-Sleeves</button>
+                <button onClick={() => this.handleFilter('Long-Sleeves')}>Long-Sleeves</button>
                 {this.portfolioItems()}
                 </div>
         
