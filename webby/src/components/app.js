@@ -7,7 +7,8 @@ import Home from "./pages/home"
 import Shirts from "./pages/shirts"
 import Headwear from "./pages/headwear";
 import Gallery from "./pages/gallery"
-import PortfolioDetail from "./shirts/shirt-detail"
+import ShirtDetail from "./shirts/shirt-detail"
+import HeadwearDetail from "./headwear/headwear-detail"
 
 
 

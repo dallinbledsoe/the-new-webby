@@ -5,7 +5,6 @@ export default function() {
     return(
         <div>
             Headwear
-            <Link to="/">Read more about myself</Link>
         </div>
     )
 }

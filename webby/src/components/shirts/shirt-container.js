@@ -1,19 +1,23 @@
 import React, { Component } from "react";
 
-import PortfolioItem from "./portfolio-item"
+import ShirtItem from "./shirt-item"
 
-export default class PortfolioContainer extends Component {
+export default class ShirtContainer extends Component {
     constructor() {
         super();
 
         this.state = {
-            pageTitle: "Welcome to my portfolio",
+            pageTitle: "Shirts",
             isLoading: false,
             data: [
-                {title: "Quip", category: "eCommerce", slug: 'quip' }, 
-                {title: "Eventbrite", category: "Scheduling", slug: 'eventbrite' },
-                {title: "Ministry Safe", category: "Enterprise", slug: 'minstry-safe' }, 
-                {title: "SwingAway", category: "eCommerce", slug: 'swingaway' }]
+                {title: "Crewsades Logo Fleece Hoodie, category: "Hoodies", slug: ' ' }, 
+                {title: "Baby Blue Embroidered Tee", category: "Short-Sleeves", slug: ' ' },
+                {title: "Black Embroidered Tee", category: "Short-Sleeves", slug: ' ' },
+                {title: "No. 3 Black Tee", category: "Short-Sleeves", slug: ' ' },
+                {title: "No. 3 Red Tee", category: "Short-Sleeves", slug: ' ' },
+                {title: "No. 3 White Tee", category: "Short-Sleeves", slug: ' ' },
+                {title: "Enlighten Painting Long Sleeve Shirt", category: "Long-Sleeves", slug: ' ' }
+                {title: "Enlighten B&W Painting Long Sleeve Shirt", category: "Long-Sleeves", slug: ' ' }
         }
         this.handleFilter = this.handleFilter.bind(this);
     }
@@ -30,7 +34,7 @@ export default class PortfolioContainer extends Component {
 
     portfolioItems() {
         return this.state.data.map(item => {
-            return <PortfolioItem title={item.title} url={"google.com"} slug={item.slug} />
+            return <ShirtItem title={item.title} url={"google.com"} slug={item.slug} />
         })
     }
 

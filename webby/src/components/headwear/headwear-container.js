@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import PortfolioItem from "./headwear-item"
 
-export default class PortfolioContainer extends Component {
+export default class HeadwearContainer extends Component {
     constructor() {
         super();
 

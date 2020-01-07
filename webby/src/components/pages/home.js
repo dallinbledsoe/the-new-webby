@@ -1,11 +1,13 @@
 import React from 'react';
-import PortfolioContainer from "../portfolio/portfolio-container"
+import ShirtContainer from "../shirts/shirt-container"
+import HeadwearContainer from "../headwear/headwear-container"
 
 export default function() {
     return (
         <div>
             <h2>Home</h2>
-            <PortfolioContainer />
+            <ShirtContainer />
+            <HeadwearContainer />
         </div>
     )
 }

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
-import styled from 'styled-components'
+// import styled from 'styled-components'
 
 
 export default class NavigationComponent extends Component {
@@ -11,8 +11,8 @@ export default class NavigationComponent extends Component {
   render() {
     return (
       <div>
-      <div class="nav-bar">
-        <div class="nav-links">
+      <div className="nav-bar">
+        <div className="nav-links">
           <NavLink exact to="/" activeClassName="nav-link-active">
             Home
           </NavLink>
