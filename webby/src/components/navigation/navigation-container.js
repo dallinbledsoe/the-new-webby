@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
-import '../style/navigation.css'
+import styled from 'styled-components'
+
 
 export default class NavigationComponent extends Component {
   constructor() {
@@ -9,7 +10,8 @@ export default class NavigationComponent extends Component {
 
   render() {
     return (
-      <div class="navigation-container">
+      <div>
+      <div class="nav-bar">
         <div class="nav-links">
           <NavLink exact to="/" activeClassName="nav-link-active">
             Home
@@ -23,9 +25,11 @@ export default class NavigationComponent extends Component {
           <NavLink to="/gallery" activeClassName="nav-link-active">
             Gallery
           </NavLink>
+          
 
           {false ? <button>Add Blog</button> : null}
         </div>
+      </div>
       </div>
     );
   }
