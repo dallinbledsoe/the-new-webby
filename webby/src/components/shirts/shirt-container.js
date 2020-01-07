@@ -32,7 +32,7 @@ export default class ShirtContainer extends Component {
     }
  
 
-    portfolioItems() {
+    shirtItems() {
         return this.state.data.map(item => {
             return <ShirtItem title={item.title} url={" "} slug={item.slug} />
         })
@@ -57,7 +57,7 @@ export default class ShirtContainer extends Component {
                 <button onClick={() => this.handleFilter('Hoodies')}>Hoodies</button>
                 <button onClick={() => this.handleFilter('Short-Sleeves')}>Short-Sleeves</button>
                 <button onClick={() => this.handleFilter('Long-Sleeves')}>Long-Sleeves</button>
-                {this.portfolioItems()}
+                {this.shirtItems()}
                 </div>
         
         )

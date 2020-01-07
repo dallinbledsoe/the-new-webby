@@ -9,7 +9,7 @@ export default function(props) {
                <h4> {props.url}
             </h4>
 
-            <Link to={`/shirts/${props.slug}`}>some link</Link>
+            <Link to={`/shirts/${props.slug}`}>view this shirt</Link>
 
         </div>
     )

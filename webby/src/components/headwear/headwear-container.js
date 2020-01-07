@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import PortfolioItem from "./headwear-item"
+import HeadwearItem from "./headwear-item";
 
 export default class HeadwearContainer extends Component {
     constructor() {
@@ -38,10 +39,19 @@ export default class HeadwearContainer extends Component {
             pageTitle: "Welcome to my portfolio",
             isLoading: false,
             data: [
-                {title: "Quip", category: "eCommerce", slug: 'quip' }, 
-                {title: "Eventbrite", category: "Scheduling", slug: 'eventbrite' },
-                {title: "Ministry Safe", category: "Enterprise", slug: 'minstry-safe' }, 
-                {title: "SwingAway", category: "eCommerce", slug: 'swingaway' }]
+                {title: "Khaki 5-Panel", category: "5-Panel", slug: '' },
+                {title: "Olive Green 5-Panel", category: "5-Panel", slug: '' },
+                {title: "Red 5-Panel", category: "5-Panel", slug: '' },
+                {title: "Black 5-Panel", category: "5-Panel", slug: '' },
+                {title: "Navy Blue 5-Panel", category: "5-Panel", slug: '' },
+                {title: "Gray 5-Panel", category: "5-Panel", slug: '' },
+                {title: "Navy-Blue Dad Hat", category: "Dad-Cap", slug: '' },
+                {title: "White Dad Hat", category: "Dad-Cap", slug: '' },
+                {title: "Spruce-Green Dad Hat", category: "Dad-Cap", slug: '' },
+                {title: "Pink Dad Hat", category: "Dad-Cap", slug: '' },
+                {title: "Black Dad Hat", category: "Dad-Cap", slug: '' },
+
+            ]
         }
         this.handleFilter = this.handleFilter.bind(this);
     }
@@ -56,9 +66,9 @@ export default class HeadwearContainer extends Component {
     }
  
 
-    portfolioItems() {
+    headwearItems() {
         return this.state.data.map(item => {
-            return <PortfolioItem title={item.title} url={"google.com"} slug={item.slug} />
+            return <HeadwearItem title={item.title} url={" "} slug={item.slug} />
         })
     }
 
@@ -78,10 +88,9 @@ export default class HeadwearContainer extends Component {
         return (
             <div>
                 <h2>{this.state.pageTitle}</h2>
-                <button onClick={() => this.handleFilter('Scheduling')}>Scheduling</button>
-                <button onClick={() => this.handleFilter('Enterprise')}>Enterprise</button>
-                <button onClick={() => this.handleFilter('eCommerce')}>eCommerce</button>
-                {this.portfolioItems()}
+                <button onClick={() => this.handleFilter('Dad-Cap')}>Dad-Caps</button>
+                <button onClick={() => this.handleFilter('5-Panel')}>5-Panels</button>
+                {this.headwearItems()}
                 </div>
         
         )
