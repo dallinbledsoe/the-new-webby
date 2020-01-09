@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
 import NavigationContainer from "./navigation/navigation-container";
 import Home from "./pages/home"
 import Shirts from "./pages/shirts"
@@ -18,7 +17,7 @@ export default class App extends Component {
         <Router>
           <div>
         <NavigationContainer />
-        
+
             <Switch>
               <Route exact path="/" component={Home} />
               <Route path="/gallery" component={Gallery} />

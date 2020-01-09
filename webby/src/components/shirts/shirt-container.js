@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import axios from "axios";
 import ShirtItem from "./shirt-item"
 
 export default class ShirtContainer extends Component {
@@ -31,11 +31,30 @@ export default class ShirtContainer extends Component {
         })
     }
  
+    getShirtItems() {
+        axios
+        .get("http://localhost:5000/shirts")
+        .then(response => {
+            console.log("response data", response);
+            this.setState({
+                data: response.data.shirt_items
+        })
+       
+        })
+        .catch(error => {
+            console.log(error);
+        })
+
+    }
 
     shirtItems() {
         return this.state.data.map(item => {
             return <ShirtItem title={item.title} url={" "} slug={item.slug} />
         })
+    }
+
+    componentDidMount() {
+        this.getShirtItems();
     }
 
     handlePageTitleUpdate() {
