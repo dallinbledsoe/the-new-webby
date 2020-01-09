@@ -6,6 +6,8 @@ export default class ShirtContainer extends Component {
     constructor() {
         super();
 
+
+        this.getShirtItems = this.getShirtItems.bind(this);
         this.state = {
             pageTitle: "Shirts",
             isLoading: false,
@@ -49,7 +51,7 @@ export default class ShirtContainer extends Component {
 
     shirtItems() {
         return this.state.data.map(item => {
-            return <ShirtItem title={item.title} url={" "} slug={item.slug} />
+            return <ShirtItem key={item.id} item={item} />
         })
     }
 
@@ -72,7 +74,6 @@ export default class ShirtContainer extends Component {
 
         return (
             <div>
-                <h2>{this.state.pageTitle}</h2>
                 <button onClick={() => this.handleFilter('Hoodies')}>Hoodies</button>
                 <button onClick={() => this.handleFilter('Short-Sleeves')}>Short-Sleeves</button>
                 <button onClick={() => this.handleFilter('Long-Sleeves')}>Long-Sleeves</button>
