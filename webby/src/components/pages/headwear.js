@@ -1,10 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom"
+import HeadwearContainer from "../headwear/headwear-container"
 
 export default function() {
     return(
         <div>
-            Headwear
+            <HeadwearContainer />
         </div>
     )
 }
