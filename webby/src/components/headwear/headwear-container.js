@@ -38,7 +38,7 @@ export default class HeadwearContainer extends Component {
         
         
         this.state = {
-            pageTitle: "Welcome to my portfolio",
+            pageTitle: "Headwear",
             isLoading: false,
             data: [
                 {title: "Khaki 5-Panel", category: "5-Panel", slug: '' },
