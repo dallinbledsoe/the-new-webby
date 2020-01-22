@@ -29,9 +29,9 @@ export default class SliderContainer extends Component {
     const index = this.state.index % classNames.length;
     const className = classNames[index];
     return(
+        <div className="slider">
         <div className={className}>
-        <div className="content">
-          {this.props.children}
+            yo
           </div>
           </div>
 
