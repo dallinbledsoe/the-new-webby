@@ -7,32 +7,32 @@ export default class ProductContainer extends Component {
         super();
 
 
-        this.getProductItems = this.getProductItems.bind(this);
+       // this.getProductItems = this.getProductItems.bind(this);
         this.state = {
             pageTitle: "Products",
             isLoading: false,
             data: [
-                {title: "Crewsades Logo Fleece Hoodie", type: "shirt", category: "Hoodies", price: "$30.00", prodimg: "", size: ["s", "m", "l", "xl", "xxl"], quantity: '1', slug: ' ' },
-                {title: "Baby Blue Embroidered Tee", type: "shirt", category: "Short-Sleeves", price: "$20.00", prodimg: "", size: ["s", "m", "l", "xl", "xxl"], quantity: '1', slug: ' ' },
-                {title: "Black Embroidered Tee", type: "shirt", category: "Short-Sleeves", price: "$20.00", prodimg: "", size: ["s", "m", "l", "xl", "xxl"], quantity: '1', slug: ' ' },
-                {title: "No. 3 Black Tee", type: "shirt", category: "Short-Sleeves", price: "$20.00", prodimg: "", size: ["s", "m", "l", "xl", "xxl"], quantity: '1', slug: ' ' },
-                {title: "No. 3 Red Tee", type: "shirt", category: "Short-Sleeves", price: "$20.00", prodimg: "", size: ["s", "m", "l", "xl", "xxl"], quantity: '1', slug: ' ' },
-                {title: "No. 3 White Tee", type: "shirt", category: "Short-Sleeves", price: "$20.00", prodimg: "", size: ["s", "m", "l", "xl", "xxl"], quantity: '1', slug: ' ' },
-                {title: "Enlighten Painting Long Sleeve Shirt", type: "shirt", category: "Long-Sleeves", price: "$29.95", prodimg: "", size: ["s", "m", "l", "xl", "xxl"], quantity: '1', slug: ' ' },
-                {title: "Enlighten B&W Painting Long Sleeve Shirt", type: "shirt", category: "Long-Sleeves", price: "$29.95", prodimg: "", size: ["s", "m", "l", "xl", "xxl"], quantity: '1', slug: ' ' },
-                {title: "Khaki 5-Panel", type: "hat", category: "5-Panel", price: "$23.50", prodimg: "", size: ["s", "m", "l", "xl", "xxl"], quantity: '1', slug: '' },
-                {title: "Olive Green 5-Panel", type: "hat", category: "5-Panel", price: "$23.50", prodimg: "", quantity: '1', slug: '' },
-                {title: "Red 5-Panel", type: "hat", category: "5-Panel", price: "$23.50", prodimg: "", quantity: '1', slug: '' },
-                {title: "Black 5-Panel", type: "hat", category: "5-Panel", price: "$23.50", prodimg: "", quantity: '1', slug: '' },
-                {title: "Navy Blue 5-Panel", type: "hat", category: "5-Panel", price: "$23.50", prodimg: "", quantity: '1', slug: '' },
-                {title: "Gray 5-Panel", type: "hat", category: "5-Panel", price: "$23.50", prodimg: "", quantity: '1', slug: '' },
-                {title: "Navy-Blue Dad Hat", type: "hat", category: "Dad-Cap", price: "$24.95", prodimg: "", quantity: '1', slug: '' },
-                {title: "White Dad Hat", type: "hat", category: "Dad-Cap", price: "$24.95", prodimg: "", quantity: '1', slug: '' },
-                {title: "Spruce-Green Dad Hat", type: "hat", category: "Dad-Cap", price: "$24.95", prodimg: "", quantiyt: '1', slug: '' },
-                {title: "Pink Dad Hat", type: "hat", category: "Dad-Cap", price: "$24.95", prodimg: "", quantity: '1', slug: '' },
-                {title: "Black Dad Hat", type: "hat", category: "Dad-Cap", price: "$24.95", prodimg: "", quantity: '1', slug: '' },
+                {title: "Crewsades Logo Fleece Hoodie", type: "shirt", category: "Hoodies", price: "$30.00", prodimg: "https://res.cloudinary.com/de1fkeds5/image/upload/v1579717305/shirts/background_ku8tcz.jpg", size: ["s", "m", "l", "xl", "xxl"], quantity: '1', slug: ' ' },
+                {title: "Baby Blue Embroidered Tee", type: "shirt", category: "Short-Sleeves", price: "$20.00", prodimg: "https://res.cloudinary.com/de1fkeds5/image/upload/v1579735038/shirts/BLUE-FRONT-FINSIHED_olwwlg.jpg", size: ["s", "m", "l", "xl", "xxl"], quantity: '1', slug: ' ' },
+                {title: "Black Embroidered Tee", type: "shirt", category: "Short-Sleeves", price: "$20.00", prodimg: "https://res.cloudinary.com/de1fkeds5/image/upload/v1579735033/shirts/BLACK-FRONT-FINSHED-embroidered-boy_k3eacr.jpg", size: ["s", "m", "l", "xl", "xxl"], quantity: '1', slug: ' ' },
+                {title: "No. 3 Black Tee", type: "shirt", category: "Short-Sleeves", price: "$20.00", prodimg: ["https://res.cloudinary.com/de1fkeds5/image/upload/v1579717308/shirts/BLACK-SHIRT-FINISHED_emqaca.jpg", "https://res.cloudinary.com/de1fkeds5/image/upload/v1579717307/shirts/BLACK-FRONT-FINSHED_trynz6.jpg"], size: ["s", "m", "l", "xl", "xxl"], quantity: '1', slug: ' ' },
+                {title: "No. 3 Red Tee", type: "shirt", category: "Short-Sleeves", price: "$20.00", prodimg: ["https://res.cloudinary.com/de1fkeds5/image/upload/v1579717377/shirts/Red-Shirt-BACK-FINISHED_ubuzbf.jpg","https://res.cloudinary.com/de1fkeds5/image/upload/v1579717376/shirts/Red-FRont-finished_fryped.jpg"], size: ["s", "m", "l", "xl", "xxl"], quantity: '1', slug: ' ' },
+                {title: "No. 3 White Tee", type: "shirt", category: "Short-Sleeves", price: "$20.00", prodimg: ["https://res.cloudinary.com/de1fkeds5/image/upload/v1579717383/shirts/WHITE-SHIRT-FINISHED_g3axgj.jpg","https://res.cloudinary.com/de1fkeds5/image/upload/v1579717383/shirts/WHITE-FRONT-FINSIHED_kx1ce1.jpg"], size: ["s", "m", "l", "xl", "xxl"], quantity: '1', slug: ' ' },
+                {title: "Enlighten Painting Long Sleeve Shirt", type: "shirt", category: "Long-Sleeves", price: "$29.95", prodimg: "https://res.cloudinary.com/de1fkeds5/image/upload/v1579717370/shirts/long-sleeve-enlighten_e5ftvy.jpg", size: ["s", "m", "l", "xl", "xxl"], quantity: '1', slug: ' ' },
+                {title: "Enlighten B&W Painting Long Sleeve Shirt", type: "shirt", category: "Long-Sleeves", price: "$29.95", prodimg: "https://res.cloudinary.com/de1fkeds5/image/upload/v1579717308/shirts/black-longsleeve-enlighten_ai4k16.jpg", size: ["s", "m", "l", "xl", "xxl"], quantity: '1', slug: ' ' },
+                {title: "Khaki 5-Panel", type: "hat", category: "5-Panel", price: "$23.50", prodimg: "https://res.cloudinary.com/de1fkeds5/image/upload/v1579717370/hats/KHAKI-DOOD-FINSIHED_hkdkhj.jpg", size: ["s", "m", "l", "xl", "xxl"], quantity: '1', slug: '' },
+                {title: "Olive Green 5-Panel", type: "hat", category: "5-Panel", price: "$23.50", prodimg: "https://res.cloudinary.com/de1fkeds5/image/upload/v1579717369/hats/finsihsed-green-hat-4-web_bltcqu.jpg", quantity: '1', slug: '' },
+                {title: "Red 5-Panel", type: "hat", category: "5-Panel", price: "$23.50", prodimg: "https://res.cloudinary.com/de1fkeds5/image/upload/v1579717376/hats/RED-five_wflhvh.jpg", quantity: '1', slug: '' },
+                {title: "Black 5-Panel", type: "hat", category: "5-Panel", price: "$23.50", prodimg: "https://res.cloudinary.com/de1fkeds5/image/upload/v1579717307/hats/BLACK-FIVE-FINSHED-4-web_rluddz.jpg", quantity: '1', slug: '' },
+                {title: "Navy Blue 5-Panel", type: "hat", category: "5-Panel", price: "$23.50", prodimg: "https://res.cloudinary.com/de1fkeds5/image/upload/v1579717309/hats/BLUE-FIVE_ydgccq.jpg", quantity: '1', slug: '' },
+                {title: "Gray 5-Panel", type: "hat", category: "5-Panel", price: "$23.50", prodimg: "https://res.cloudinary.com/de1fkeds5/image/upload/v1579717369/hats/Grey-5-panel_ddw1gd.jpg", quantity: '1', slug: '' },
+                {title: "Navy-Blue Dad Hat", type: "hat", category: "Dad-Cap", price: "$24.95", prodimg: "https://res.cloudinary.com/de1fkeds5/image/upload/v1579717308/hats/BLUE-DAD-HAT-FFFFFFF_inrafy.jpg", quantity: '1', slug: '' },
+                {title: "White Dad Hat", type: "hat", category: "Dad-Cap", price: "$24.95", prodimg: "https://res.cloudinary.com/de1fkeds5/image/upload/v1579717383/hats/WHITE-DAD_fjbidb.jpg", quantity: '1', slug: '' },
+                {title: "Spruce-Green Dad Hat", type: "hat", category: "Dad-Cap", price: "$24.95", prodimg: "https://res.cloudinary.com/de1fkeds5/image/upload/v1579734997/hats/SPRUCE-GREEN_rzgmmx.jpg", quantity: '1', slug: '' },
+                {title: "Pink Dad Hat", type: "hat", category: "Dad-Cap", price: "$24.95", prodimg: "https://res.cloudinary.com/de1fkeds5/image/upload/v1579734989/hats/PINK-DAD_yk2xp2.jpg", quantity: '1', slug: '' },
+                {title: "Black Dad Hat", type: "hat", category: "Dad-Cap", price: "$24.95", prodimg: "https://res.cloudinary.com/de1fkeds5/image/upload/v1579717307/hats/BLACK-HAT-FINISHED-4-web_pw96ql.jpg", quantity: '1', slug: '' },
             ]}
-        this.handleFilter = this.handleFilter.bind(this);
+       // this.handleFilter = this.handleFilter.bind(this);
     }
 
         
@@ -43,7 +43,7 @@ export default class ProductContainer extends Component {
 
 productItems() {
     return this.state.data.map(item => {
-        return <ProductItem title={item.title} url={" "} slug={item.slug} />
+        return <ProductItem title={item.title} url={" "} slug={item.slug} category={item.category} price={item.price} prodimg={item.prodimg} size={item.size} quantity={item.quantity} />
     })
 }
 
@@ -63,8 +63,8 @@ render() {
     return (
         <div>
             <h2>{this.state.pageTitle}</h2>
-            <button onClick={() => this.handleFilter('Dad-Cap')}>Dad-Caps</button>
-            <button onClick={() => this.handleFilter('5-Panel')}>5-Panels</button>
+            {/* <button onClick={() => this.handleFilter('Dad-Cap')}>Dad-Caps</button>
+            <button onClick={() => this.handleFilter('5-Panel')}>5-Panels</button> */}
             {this.productItems()}
             </div>
     
