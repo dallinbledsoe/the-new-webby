@@ -4,39 +4,7 @@ import HeadwearItem from "./headwear-item";
 export default class HeadwearContainer extends Component {
     constructor() {
         super();
-
-
-
-
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+    
         this.state = {
             pageTitle: "Headwear",
             isLoading: false,
