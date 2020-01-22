@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
+import navimg from "./navlogo.jpg";
 // import styled from 'styled-components'
 
 
@@ -13,7 +14,9 @@ export default class NavigationComponent extends Component {
       <div>
       <div className="nav-wrapper">
       <div className="left-side">
-            <img src="../RAW-vector-web-finsihed.png"></img>
+            <img src=
+             {navimg} alt="logo">
+            </img>
           </div>
         <div className="right-side">
           <div className="nav-link-wrapper">

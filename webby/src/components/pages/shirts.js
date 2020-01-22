@@ -1,10 +1,10 @@
 import React from "react";
-import ShirtContainer from "../shirts/shirt-container";
+import ProductContainer from "../products/product-container";
 
 export default function() {
     return(
         <div>
-            <ShirtContainer />
+            <ProductContainer />
         </div>
     )
 }

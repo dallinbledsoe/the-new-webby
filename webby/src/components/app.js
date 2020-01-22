@@ -4,9 +4,8 @@ import NavigationContainer from "./navigation/navigation-container";
 import Home from "./pages/home"
 import Shirts from "./pages/shirts"
 import Headwear from "./pages/headwear";
-import Gallery from "./pages/gallery"
-import ShirtDetail from "./shirts/shirt-detail"
-import HeadwearDetail from "./headwear/headwear-detail"
+import Gallery from "./pages/gallery";
+import ProductDetail from "./products/product-detail";
 
 
 
@@ -23,8 +22,8 @@ export default class App extends Component {
               <Route path="/gallery" component={Gallery} />
               <Route path="/shirts" component={Shirts} />
               <Route path="/headwear" component={Headwear} />
-              <Route path="/headwear/:slug" component={HeadwearDetail} />
-              <Route path="/shirts/:slug" component={ShirtDetail} />
+              <Route path="/headwear/:slug" component={ProductDetail} />
+              <Route path="/shirts/:slug" component={ProductDetail} />
             </Switch>
 </div>
         </Router>
