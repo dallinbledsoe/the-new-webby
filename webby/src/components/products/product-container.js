@@ -61,8 +61,7 @@ render() {
     }
 
     return (
-        <div>
-            <h2>{this.state.pageTitle}</h2>
+        <div className="products">
             {/* <button onClick={() => this.handleFilter('Dad-Cap')}>Dad-Caps</button>
             <button onClick={() => this.handleFilter('5-Panel')}>5-Panels</button> */}
             {this.productItems()}

@@ -3,7 +3,7 @@ import ProductContainer from "../products/product-container";
 
 export default function() {
     return(
-        <div>
+        <div className="products-wrapper">
             <ProductContainer />
         </div>
     )
