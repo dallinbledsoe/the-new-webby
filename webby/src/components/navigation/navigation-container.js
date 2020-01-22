@@ -11,7 +11,7 @@ export default class NavigationComponent extends Component {
 
   render() {
     return (
-      <div>
+      <div className="navbar">
       <div className="nav-wrapper">
       <div className="left-side">
             <img src=
