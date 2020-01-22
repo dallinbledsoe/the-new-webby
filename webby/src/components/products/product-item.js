@@ -6,8 +6,15 @@ export default function(props) {
             <h3>
                 {props.title}
                 </h3>
-               <h4> {props.url}
+               <h4>
+                    {props.url}
             </h4>
+            {props.type}
+            {props.category}
+            {props.price}
+            <img src={props.prodimg}></img>
+            {props.size}
+            {props.quantity}
 
             <Link to={`/products/${props.slug}`}>view this item</Link>
 
