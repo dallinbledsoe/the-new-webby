@@ -1,18 +1,28 @@
-.content {
-    background-color: black;
-}
+.slider {
+display: flex;
+justify-content: center;
 .first-header {
- background: url('https://res.cloudinary.com/de1fkeds5/image/upload/v1579717309/_MG_2397_ejun5g.jpg')
+ content: url('https://res.cloudinary.com/de1fkeds5/image/upload/v1579717309/_MG_2397_ejun5g.jpg');
+ height: 800px;
+ width: 1200px;
 }
 
 .second-header {
-    background: url('https://res.cloudinary.com/de1fkeds5/image/upload/v1579717367/DALLIN-SLIDER-FINSIHSED-GREEN-HAT-4-WEB_zzwojh.jpg')
+    content: url('https://res.cloudinary.com/de1fkeds5/image/upload/v1579717367/DALLIN-SLIDER-FINSIHSED-GREEN-HAT-4-WEB_zzwojh.jpg');
+    height: 800px;
+    width: 1200px;
 }
 
 .third-header {
-    background: url('https://res.cloudinary.com/de1fkeds5/image/upload/v1579717309/_MG_2397_ejun5g.jpg')
+    content: url('https://res.cloudinary.com/de1fkeds5/image/upload/v1579717309/_MG_2397_ejun5g.jpg');
+    height: 800px;
+    width: 1200px;
 }
 
 .fourth-header {
-    background: url('https://res.cloudinary.com/de1fkeds5/image/upload/v1579717382/SLIDER-1-finsihed_rzdrvf.jpg')
+    content: url('https://res.cloudinary.com/de1fkeds5/image/upload/v1579717382/SLIDER-1-finsihed_rzdrvf.jpg');
+    height: 800px;
+    width: 1200px;
+}
+
 }
