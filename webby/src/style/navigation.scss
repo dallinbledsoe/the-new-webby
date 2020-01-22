@@ -1,10 +1,11 @@
-.navbar {
+.et-fixed-header {
     position: relative;
     background-color: white;
     z-index: 99999;
     -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    
 
 
 .nav-wrapper {
@@ -13,10 +14,15 @@
     padding: 30px;
 
 }
-
+.left-side {
+    img {
+        height: 50px;
+    }
+}
 
 .right-side {
     display: flex;
+    align-items: center;
 }
 
 .nav-link-wrapper {
@@ -27,11 +33,14 @@
     a {
         color: black;
         text-decoration: none;
-        margin-right: 20px
+        margin-right: 20px;
+        font-weight: 600;
     }
+}
     a:hover {
-        border-bottom: 1px solid black;
-    }
+        border-bottom: 1.5px solid rgb(54, 54, 54);
+        color: rgb(54, 54, 54);
+        
 }
 
 }

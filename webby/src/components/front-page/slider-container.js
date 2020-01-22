@@ -69,7 +69,6 @@ export default class SliderContainer extends Component {
                   <img src={pics[this.state.index]} alt="" />
                 </div>
                 <div className={`next pic ${move}`}>
-                  {this.state.next}
                   <img src={pics[this.state.next]} alt="" />
                 </div>
               </div>

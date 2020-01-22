@@ -7,11 +7,13 @@ import navimg from "./navlogo.jpg";
 export default class NavigationComponent extends Component {
   constructor() {
     super();
+      
   }
 
   render() {
     return (
-      <div className="navbar">
+      <header id="navbar" data-height-onload="190" data-height-loaded="true" data-fixed-height-onload="54" className="et-fixed-header">
+        
       <div className="nav-wrapper">
       <div className="left-side">
             <img src=
@@ -45,7 +47,7 @@ export default class NavigationComponent extends Component {
           {false ? <button>Add Blog</button> : null}
         </div>
       </div>
-      </div>
+      </header>
     );
   }
 }
