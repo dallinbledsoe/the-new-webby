@@ -7,6 +7,7 @@ import Headwear from "./pages/headwear";
 import Gallery from "./pages/gallery";
 import ProductDetail from "./products/product-detail";
 import Cart from "./cart/cart"
+import CartTwo from "./cart/cart2"
 
 
 
@@ -26,6 +27,7 @@ export default class App extends Component {
               <Route path="/headwear" component={Headwear} />
               <Route path="/headwear/:slug" component={ProductDetail} />
               <Route path="/shirts/:slug" component={ProductDetail} />
+              <Route path="/cart" component={CartTwo} />
               {/* <Route path="/auth" render={props => (
               <Login {...props}
               handleSuccessfulLogin={this.handleSuccessfulLogin}
