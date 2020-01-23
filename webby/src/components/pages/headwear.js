@@ -1,10 +1,10 @@
 import React from "react";
-import HeadwearContainer from "../headwear/headwear-container"
+import ProductContainer from "../products/product-container"
 
 export default function() {
     return(
         <div>
-            <HeadwearContainer />
+            <ProductContainer />
         </div>
     )
 }

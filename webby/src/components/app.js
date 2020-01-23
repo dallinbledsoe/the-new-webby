@@ -6,6 +6,7 @@ import Shirts from "./pages/shirts"
 import Headwear from "./pages/headwear";
 import Gallery from "./pages/gallery";
 import ProductDetail from "./products/product-detail";
+import Cart from "./cart/cart"
 
 
 
@@ -16,6 +17,7 @@ export default class App extends Component {
         <Router>
           <div>
         <NavigationContainer />
+        <Cart />
 
             <Switch>
               <Route exact path="/" component={Home} />
@@ -24,6 +26,14 @@ export default class App extends Component {
               <Route path="/headwear" component={Headwear} />
               <Route path="/headwear/:slug" component={ProductDetail} />
               <Route path="/shirts/:slug" component={ProductDetail} />
+              {/* <Route path="/auth" render={props => (
+              <Login {...props}
+              handleSuccessfulLogin={this.handleSuccessfulLogin}
+              handleUnsuccessfulLogin={this.handleUnsuccessfulLogin}
+                />
+              )}
+               /> */}
+              
             </Switch>
 </div>
         </Router>
