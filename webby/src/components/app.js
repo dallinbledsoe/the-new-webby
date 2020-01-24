@@ -8,6 +8,7 @@ import Gallery from "./pages/gallery";
 import ProductDetail from "./products/product-detail";
 // import Cart from "./cart/cart"
 import CartTwo from "./cart/cart2"
+import CheckoutForm from "./cart/form"
 
 
 
@@ -19,6 +20,8 @@ export default class App extends Component {
           <div>
         <NavigationContainer />
         {/* <Cart /> */}
+
+        {/* <CheckoutForm /> */}
 
             <Switch>
               <Route exact path="/" component={Home} />

@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import regeneratorRuntime from "regenerator-runtime";
 import { CardElement, injectStripe, ReactStripeElements } from 'react-stripe-elements'
 
 class CheckoutForm extends Component {
     constructor(props) {
         super(props);
+        this.state = {complete: false};
         this.submit = this.submit.bind(this);
     }
     async submit(ev) {
@@ -14,11 +16,12 @@ class CheckoutForm extends Component {
           body: token.id
         });
       
-        if (response.ok) console.log("Purchase Complete!")
+        if (response.ok) this.setState({complete: true})
       }
     
 
     render() {
+        if (this.state.complete) return <h1>Purchase Complete</h1>;
         return (
             <div className="checkout">
              <h1>Would you like to complete the purchase?</h1>
@@ -30,4 +33,4 @@ class CheckoutForm extends Component {
     }
 }
 
-export default class injectStripe{CheckoutForm}
+export default injectStripe(CheckoutForm)
