@@ -1,12 +1,33 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { CardElement, injectStripe, ReactStripeElements } from 'react-stripe-elements'
 
-class Form extends Component {
+class CheckoutForm extends Component {
+    constructor(props) {
+        super(props);
+        this.submit = this.submit.bind(this);
+    }
+    async submit(ev) {
+        let {token} = await this.props.stripe.createToken({name: "Name"});
+        let response = await fetch("/charge", {
+          method: "POST",
+          headers: {"Content-Type": "text/plain"},
+          body: token.id
+        });
+      
+        if (response.ok) console.log("Purchase Complete!")
+      }
+    
+
     render() {
         return (
-        <h1>form</h1>
+            <div className="checkout">
+             <h1>Would you like to complete the purchase?</h1>
+             <CardElement />
+             <button onClick={this.submit}>Purchase</button>
+            </div>
+
         )
     }
 }
 
-export default injectStripe(Form)
+export default class injectStripe{CheckoutForm}

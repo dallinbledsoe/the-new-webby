@@ -6,7 +6,7 @@ import Shirts from "./pages/shirts"
 import Headwear from "./pages/headwear";
 import Gallery from "./pages/gallery";
 import ProductDetail from "./products/product-detail";
-import Cart from "./cart/cart"
+// import Cart from "./cart/cart"
 import CartTwo from "./cart/cart2"
 
 
@@ -18,7 +18,7 @@ export default class App extends Component {
         <Router>
           <div>
         <NavigationContainer />
-        <Cart />
+        {/* <Cart /> */}
 
             <Switch>
               <Route exact path="/" component={Home} />
